@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Header = (props) => {
+const Header = ({ icon, text }) => {
   return (
     <div className="header">
-        <img src={props.icon} alt='editor-icon' style={{width: "50px", height: "50px"}}/>
-        <p className="header__text">{props.text}</p>
+      <img
+        src={icon}
+        style={{ width: "50px", height: "50px" }}
+      />
+      <p className="header__text">{text}</p>
     </div>
   );
-}
+};
 
-export default Header
+export default Header;
